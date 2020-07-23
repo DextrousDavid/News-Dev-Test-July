@@ -2,41 +2,47 @@ import Link from 'next/link';
 
 const Navbar = () => (
   <div>
-    <ul>
-      <li>
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-      </li>
-      <li>
-        <Link href="/login">
-          <a>Login</a>
-        </Link>
-      </li>
-      <li>
-        <Link href="/register">
-          <a>Register</a>
-        </Link>
-      </li>
-    </ul>
+    <nav className="navbar navbar-expand navbar-dark bg-custom-2 bg-dark mb-4">
+      <div className="container">
+        <a className="navbar-brand" href="/">
+          Test
+        </a>
+        <div className="collapse navbar-collapse">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <Link href="/">
+                <a className="nav-link">Home</a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/login">
+                <a className="nav-link">Login</a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/login">
+                <a className="nav-link">Register</a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/login">
+                <a className="nav-link">News</a>
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <style jsx>
       {`
-        ul {
-          background: #333;
+        .bg-custom-2 {
+          background-image: linear-gradient(15deg, #18547a 0%, #80d0c7 100%);
           color: #fff;
-          list-style: none;
-          display: flex;
         }
 
-        ul li {
-          font-size: 18px;
-          margin-right: 20px;
-        }
-
-        ul li a {
+        li {
           color: #fff;
-          text-decoration: none;
         }
       `}
     </style>
