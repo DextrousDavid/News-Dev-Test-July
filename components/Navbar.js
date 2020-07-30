@@ -2,13 +2,14 @@ import Link from 'next/link';
 
 const Navbar = () => (
   <div>
-    <nav className="navbar navbar-expand navbar-dark bg-custom-2 bg-dark mb-4">
-      <div className="container">
+    <nav className="navbar navbar-expand navbar-dark bg-custom-2 bg-dark mb-3">
+      <div className="container-fluid">
         <a className="navbar-brand" href="/">
-          Test
+          <strong className="up">UBNews</strong>
+          .com
         </a>
         <div className="collapse navbar-collapse">
-          <ul className="navbar-nav ml-auto">
+          <ul className="navy navbar-nav ml-auto">
             <li className="nav-item">
               <Link href="/">
                 <a className="nav-link">Home</a>
@@ -19,14 +20,10 @@ const Navbar = () => (
                 <a className="nav-link">Login</a>
               </Link>
             </li>
+
             <li className="nav-item">
-              <Link href="/login">
+              <Link href="/register">
                 <a className="nav-link">Register</a>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/login">
-                <a className="nav-link">News</a>
               </Link>
             </li>
           </ul>
@@ -43,6 +40,13 @@ const Navbar = () => (
 
         li {
           color: #fff;
+        }
+        .nav-link {
+          margin-left: -6px;
+        }
+        .up {
+          font-size: 18px;
+          margin-left: -9px;
         }
       `}
     </style>

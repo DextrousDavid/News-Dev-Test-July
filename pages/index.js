@@ -1,17 +1,39 @@
-import Navbar from '../components/Navbar';
-
 import Fetch from 'isomorphic-unfetch';
 import Layout from '../components/Layout';
+import News from '../components/News';
+import Jumbotron from '../components/Jumbotron';
 
+// const newsList = {
+//   status: 'ok',
+//   articles: [
+//     {
+//       title: 'It will work',
+//       author: 'Samuel',
+//       publishedAt: 'July',
+//       description: 'Hola Hola',
+//       content: 'lorem100000000000000',
+//       urlToImage: 'www.com.com',
+//     },
+//   ],
+// };
 const Index = props => (
   <Layout>
     <div>
-      <h2>Hello HomePage</h2>
-      <p>Holla</p>
-      <p>{props.news}</p>
+      <Jumbotron />
+      <br />
+      <br />
+      <News newsList={props.newsList} />
     </div>
+    <style jsx>{`
+      .bodily {
+        background-color: blue;
+        padding: 200px;
+      }
+    `}</style>
   </Layout>
 );
+
+export default Index;
 
 Index.getInitialProps = async function () {
   const res = await fetch(
@@ -20,22 +42,6 @@ Index.getInitialProps = async function () {
   const data = await res.json();
 
   return {
-    news: data.articles.map(article => (
-      <div>
-        <ul>
-          <li key={article.source.id}>Author: {article.author}</li>
-          <li key={article.source.id}>Title: {article.title}</li>
-        </ul>
-      </div>
-    )),
+    newsList: data,
   };
 };
-
-//   return {
-//     news: data.articles.map(article => (
-//       <li key={article.source.id}>{article.source.name}</li>
-//     )),
-//   };
-// r
-
-export default Index;

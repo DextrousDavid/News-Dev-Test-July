@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\nimport Layout from '../components/Layout';\n\nvar UploadedNews = function UploadedNews() {\n  return __jsx(Layout, null, __jsx(\"div\", null, __jsx(\"h1\", null, \"Welcome to UploadedNews page!\")));\n};\n\nexport default UploadedNews;","map":null,"metadata":{},"sourceType":"module"}
