@@ -2,7 +2,7 @@ const Jumbotron = () => (
   <div className="card container-fluid card-image">
     <div className="text-white text-center">
       <div className="py-3">
-        <h2 className="card-title my-3 py-3">Welcome to UpBaseNews</h2>
+        <h2 className="card-title my-2 py-1">Welcome to UpBaseNews</h2>
         <p>Your number one news platform...</p>
         <br />
       </div>

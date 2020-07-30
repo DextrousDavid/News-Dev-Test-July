@@ -105,11 +105,6 @@ const NewsUploadForm = () => (
 
     <style jsx>
       {`
-        form,
-        p {
-          padding-left: 40px;
-        }
-
         #redStar {
           color: red;
         }

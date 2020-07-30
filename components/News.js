@@ -26,7 +26,9 @@ const News = props => (
                     {e.title}
                   </span>
                   <br />
+                  <br />
                   <strong>Date Published:</strong> {e.publishedAt}
+                  <br />
                   <br />
                   <strong className="text-center">Author:</strong>{' '}
                   <i className="bx bx-tada bxs-phone-call"></i> {e.author}
@@ -65,11 +67,7 @@ const News = props => (
           font-size: 17px;
         }
 
-        .allNews {
-          padding-right: 20px;
-        }
-
-        #capitalized {
+        . #capitalized {
           text-transform: capitalize;
           font-weight: bold;
         }

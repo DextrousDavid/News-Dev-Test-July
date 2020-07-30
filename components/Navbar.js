@@ -3,27 +3,25 @@ import Link from 'next/link';
 const Navbar = () => (
   <div>
     <nav className="navbar navbar-expand navbar-dark bg-custom-2 bg-dark mb-3">
-      <div className="container-fluid">
+      <div className="container">
         <a className="navbar-brand" href="/">
-          <strong className="up">UBNews</strong>
+          <strong className="up">UpBaseNews</strong>
           .com
         </a>
         <div className="collapse navbar-collapse">
           <ul className="navy navbar-nav ml-auto">
             <li className="nav-item">
               <Link href="/">
-                <a className="nav-link">Home</a>
+                <a className="nav-link">
+                  <strong>Home</strong>
+                </a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/login">
-                <a className="nav-link">Login</a>
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link href="/register">
-                <a className="nav-link">Register</a>
+                <a className="nav-link">
+                  <strong>Member+</strong>
+                </a>
               </Link>
             </li>
           </ul>
@@ -45,8 +43,8 @@ const Navbar = () => (
           margin-left: -6px;
         }
         .up {
-          font-size: 18px;
-          margin-left: -9px;
+          font-size: 16px;
+          margin-left: -5px;
         }
       `}
     </style>
