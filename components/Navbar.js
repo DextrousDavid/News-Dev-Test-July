@@ -43,8 +43,9 @@ const Navbar = () => (
           margin-left: -6px;
         }
         .up {
-          font-size: 16px;
+          font-size: 18px;
           margin-left: -5px;
+          font-weight: 20px;
         }
       `}
     </style>
