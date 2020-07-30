@@ -1,0 +1,31 @@
+{
+  "name": "News-Dev-Test-July",
+  "version": "1.0.0",
+  "description": "A news website built with React.JS configured with newsapi.org.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DextrousDavid/News-Dev-Test-July.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DextrousDavid/News-Dev-Test-July/issues"
+  },
+  "homepage": "https://github.com/DextrousDavid/News-Dev-Test-July#readme",
+  "dependencies": {
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^9.4.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-read-more": "^1.0.0",
+    "requests": "^0.3.0"
+  }
+}
